@@ -8,7 +8,7 @@ class MySQLConnection:
             self.connection = mysql.connector.connect(
                 host='api_mysql',
                 database='docverse',
-                user='mysql',
+                user='root',
                 password='sun147oi'
             )
             if not self.connection.is_connected():
