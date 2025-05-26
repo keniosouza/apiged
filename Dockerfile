@@ -2,8 +2,10 @@ FROM python:3.12-slim
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+# Instala dependências do sistema, incluindo Tesseract, MariaDB e utilitários para mysqlclient
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
+    pkg-config \
     tesseract-ocr \
     tesseract-ocr-por \
     libglib2.0-0 \
