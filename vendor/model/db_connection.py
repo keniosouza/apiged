@@ -6,10 +6,10 @@ class MySQLConnection:
     def __init__(self):
         try:
             self.connection = mysql.connector.connect(
-                host='localhost',
+                host='api_mysql',
                 database='docverse',
-                user='root',
-                password='root'
+                user='mysql',
+                password='sun147oi'
             )
             if not self.connection.is_connected():
                 raise ValueError("Não foi possível efetuar a conexão")
